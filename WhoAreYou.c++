@@ -30,7 +30,6 @@ void _main()
     cin>>name;
     cout<<"Hello, "<<name<<"!"<<endl;
     cout<<"Tossing coin..."<<endl;
-    random_device rnd;
     string s[2];
     s[0] = "Heads";
     s[1] = "Tails";
@@ -51,8 +50,5 @@ void _main()
     {
         cout<<s[i]<<": "<<count[i]<<s2[i];
     }
-    if(count[0] > count[1])cout<<name<<" won"<<endl;
-    else cout<<name<<" lose"<<endl;
-    
 
 }
