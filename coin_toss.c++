@@ -29,17 +29,20 @@ void _main()
     random_device rnd;
     s[0] = "Heads";
     s[1] = "Tails";
+    aray count(2,0);
     roop(i,3)
     {
         cout<<"Round "<<i + 1<<": ";
-        cout<<s[rnd() % 2]<<endl;
+        int rn = rnd() % 2;
+        cout<<s[rn]<<endl;
+        count[rn]++;
     }
     string s2[2];
     s2[0] = ", ";
     s2[1] = "\n";
     roop(i,2)
     {
-        cout<<s[rnd() % 2]<<": "<<i + 1<<s2[i];
+        cout<<s[i]<<": "<<count[i]<<s2[i];
     }
 
 }
