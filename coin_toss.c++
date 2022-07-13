@@ -37,7 +37,9 @@ void _main()
         cout<<s[rn]<<endl;
         count[rn]++;
     }
+    
     string s2[2];
+
     s2[0] = ", ";
     s2[1] = "\n";
     roop(i,2)
